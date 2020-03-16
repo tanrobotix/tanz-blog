@@ -1,0 +1,20 @@
+---
+label: Social Links
+hide_body: true
+is_partial: false
+fields:
+  - type: field_group_list
+    name: links
+    label: Social Links
+    description: A list of social links displayed on the left side.
+    fields:
+      - type: text
+        name: type
+        label: Type
+        config:
+          required: true
+      - type: text
+        name: url
+        label: URL
+    config:
+      labelField: type

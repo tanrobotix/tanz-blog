@@ -1,0 +1,12 @@
+---
+label: Action
+hide_body: true
+is_partial: true
+display_field: label
+fields:
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: url
+    label: URL

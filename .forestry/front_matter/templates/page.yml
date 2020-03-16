@@ -1,0 +1,25 @@
+---
+label: Page
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: The title of the page
+    config:
+      required: true
+  - type: text
+    name: subtitle
+    label: Subtitle
+    description: Text that is shown just above the title
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: page
+    config:
+      required: true
+pages:
+  - src/pages/elements.md
+  - src/pages/generic.md
+  - src/pages/ipsum.md

@@ -1,0 +1,29 @@
+---
+label: Footer Configuration
+hide_body: true
+is_partial: false
+fields:
+  - type: textarea
+    name: content
+    label: Footer Content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: field_group_list
+    name: links
+    label: Links
+    description: A list of links to display in the footer of the site
+    fields:
+      - type: text
+        name: text
+        label: Link text
+      - type: text
+        name: url
+        label: URL
+      - type: boolean
+        name: new_window
+        label: Open in new window
+        default: true
+    config:
+      labelField: text
