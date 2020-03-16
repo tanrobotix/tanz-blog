@@ -1,6 +1,9 @@
 ---
 content: "© 2020. All rights reserved."
 links:
+- text: Linkedin
+  url: https://www.linkedin.com/in/tonguyenduytan
+  new_window: true
 - text: Github
   url: https://github.com/tanrobotix
   new_window: true
