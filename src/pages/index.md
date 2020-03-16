@@ -1,71 +1,45 @@
 ---
 title: Home
 sections:
-  - type: heroblock
-    template: heroblock
-    title: This is a hero headline.
-    section_id: hero
-    component: HeroBlock
-    subtitle: '### This is a super-cool hero subhead.'
-    image: images/avatar.png
-  - type: contentblock
-    template: contentblock
-    title: Text
-    section_id: intro
-    component: ContentBlock
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci diam,
-      elementum consectetur elit non, tempus varius leo. In ut bibendum mauris.
-      Vestibulum mattis pharetra enim. Maecenas ornare vulputate nisi sed
-      condimentum. Fusce sit amet cursus nunc. Vivamus malesuada posuere mollis.
-      Aliquam facilisis neque eget ligula aliquam consequat.
-
-      ### This is an H3. Use it for subheads and subsections.
-
-      Donec malesuada, augue eu blandit porta, metus metus auctor leo, non
-      dapibus felis odio non tortor. Mauris sem orci, tristique eget [this is an
-      inline link](#) placerat non, eleifend tempor dolor. Quisque sed nisl
-      elit. Praesent pulvinar id urna quis cursus. In hac habitasse platea
-      dictumst. Mauris sed odio magna. Duis felis turpis, posuere at erat nec,
-      condimentum luctus nibh. Nam leo ante, tempor ut tellus vel, lacinia
-      aliquam velit. Mauris ut purus in nisl suscipit feugiat.
-
-      Pellentesque tempor aliquet dolor, ac consectetur lorem ornare id.
-      Vestibulum sit amet facilisis elit, sit amet rhoncus felis. Nunc rhoncus
-      porttitor sollicitudin. Quisque eu leo metus. Curabitur gravida nibh eu
-  - type: postlist
-    template: postlist
-    title: Recent Posts
-    section_id: posts
-    component: Postlist
-  - type: textimageblock
-    template: textimageblock
-    title: A Cat
-    section_id: cat
-    component: TextImageBlock
-    text: >-
-      Hi this is my text and image block. Vis accumsan feugiat adipiscing nisl
-      amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus
-      aliquet placerat commodo. 
-
-      Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a
-      in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia
-      ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum
-      massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan
-      euismod nunc adipiscing lacinia erat ut sit. Arcu amet. 
-
-      Id massa aliquet arcu accumsan lorem amet accumsan.
-
-
-      Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a
-      in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia
-      ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum
-      massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan
-      euismod nunc adipiscing lacinia erat ut sit. Arcu amet. 
-    image: images/art.svg
+- type: heroblock
+  template: heroblock
+  title: Welcome to Tanz.io
+  section_id: welcome
+  component: HeroBlock
+  subtitle: "### Here is the very beginning of my journey"
+  image: "/images/tantnd.jpg"
+- type: contentblock
+  template: contentblock
+  title: Intro
+  section_id: intro
+  component: ContentBlock
+  content: "Xin chào, tôi là Duy Tân.  \nTự giới thiệu bản thân tí xí. tôi sinh ra
+    trong một gia đình... bình thường. Học tập và lớn lên một cách cũng bình thường
+    như bao đứa trẻ khác luôn :D  \nTôi là một kỹ sư... Ồh nghe có vẻ hơi ghê\\~,
+    thật ra là coder.Ngoài ra còn là thợ sửa tất cả các thiết bị điện tử gia dụng,...\n\n###
+    About this blog\n\nTôi viết blog này để chia sẽ kiến thức của mình về IT. Thật
+    ra kiến thức không bao nhiêu nhưng chia sẽ được bao nhiêu hay bấy nhiêu. Góp ích
+    cho xã hội cộng đồng, phát triển đất nước vững mạnh =))\n\n  \n\\- ****Open source:****
+    Mình cũng sẽ chia sẽ open 1 số source code tool tẹt, biết đâu lại có vài bạn cần
+    tới\n\n>   \n> Blog này có vài mục chính sau đây, các bạn có thể tham khảo  \n>
+    \\- ****IT chung chung__**\n>\n> \\- ****DevOps Zone__**\n>\n> \\- ****Tâm sự
+    chuyện đời__**\n>\n> \\- ****Mấy thứ linh tinh__**"
+- type: postlist
+  template: postlist
+  title: Recent Posts
+  section_id: posts
+  component: Postlist
+- type: textimageblock
+  template: textimageblock
+  title: A Cat
+  section_id: cat
+  component: TextImageBlock
+  text: "  Contact updating"
+  image: "/images/avatar.png"
 menus:
   main:
     title: Home
     weight: 1
 template: home
+
 ---
