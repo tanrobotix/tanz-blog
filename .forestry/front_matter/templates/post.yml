@@ -1,42 +1,42 @@
 ---
 label: Post
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page
-    config:
-      required: true
-  - type: text
-    name: subtitle
-    label: Subtitle
-    description: Text that is shown just above the title
-  - type: file
-    name: content_img_path
-    label: Image
-    description: The image shown on top of the page
-  - type: text
-    name: excerpt
-    label: Home Excerpt
-    description: Excerpt to be displayed in any thumbnails for the post
-  - type: datetime
-    name: date
-    label: Date
-    config:
-      required: true
-  - type: file
-    name: thumb_img_path
-    label: Alternate Image
-    description: image to be displayed in any thumbnails for the post
-  - type: text
-    name: template
-    label: Template
-    hidden: true
-    default: post
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the page
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: Text that is shown just above the title
+- type: file
+  name: content_img_path
+  label: Image
+  description: The image shown on top of the page
+- type: text
+  name: excerpt
+  label: Home Excerpt
+  description: Excerpt to be displayed in any thumbnails for the post
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: file
+  name: thumb_img_path
+  label: Alternate Image
+  description: image to be displayed in any thumbnails for the post
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: post
+  config:
+    required: true
 pages:
-  - src/pages/posts/magna.md
-  - src/pages/posts/sed.md
-  - src/pages/posts/tellus.md
+- src/pages/posts/magna.md
+- src/pages/posts/sed.md
+- src/pages/posts/tellus.md

@@ -1,17 +1,16 @@
 ---
 label: Header Configuration
 hide_body: true
-is_partial: false
 fields:
-  - type: textarea
-    name: content
-    label: Header Content
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
-  - type: boolean
-    name: has_nav
-    label: Navigation Menu
-    description: Display the navigation bar in the header
-    default: true
+- type: textarea
+  name: content
+  label: Header Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: boolean
+  name: has_nav
+  label: Navigation Menu
+  description: Display the navigation bar in the header
+  default: true

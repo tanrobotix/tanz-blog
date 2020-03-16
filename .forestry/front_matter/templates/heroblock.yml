@@ -1,42 +1,40 @@
 ---
 label: Hero Header With Image
 hide_body: true
-is_partial: true
 display_field: title
 fields:
-  - type: text
-    name: title
-    label: Section Title
-    description: >-
-      The section title (Used by the CMS, even if it is not displayed in the
-      section)
-  - type: text
-    name: section_id
-    label: Element ID
-  - type: text
-    name: component
-    label: Component
-    hidden: true
-    config:
-      required: true
-    default: HeroBlock
-  - type: textarea
-    name: subtitle
-    label: Subtitle
-    description: The subtitle of the header section
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
-  - type: file
-    name: image
-    label: Image
-    description: The image to display with the text
-  - type: text
-    name: type
-    label: Reference Type Name
-    description: 'Name of the Stackbit object model, used by fields of type reference'
-    hidden: true
-    default: heroblock
-    config:
-      required: true
+- type: text
+  name: title
+  label: Section Title
+  description: The section title (Used by the CMS, even if it is not displayed in
+    the section)
+- type: text
+  name: section_id
+  label: Element ID
+- type: text
+  name: component
+  label: Component
+  hidden: true
+  config:
+    required: true
+  default: HeroBlock
+- type: textarea
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the header section
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  name: image
+  label: Image
+  description: The image to display with the text
+- type: text
+  name: type
+  label: Reference Type Name
+  description: Name of the Stackbit object model, used by fields of type reference
+  hidden: true
+  default: heroblock
+  config:
+    required: true
