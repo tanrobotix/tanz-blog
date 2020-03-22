@@ -1,15 +1,28 @@
 ---
-title: Ipsum dolor sit amet
-subtitle: Aliquam lobortis faucibus blandit
+title: Welcome
+subtitle: Here is the very beginning of my journey
 menus:
   main:
     title: Ipsum
     weight: 4
 template: page
+
 ---
+Xin chào, tôi là Duy Tân.  
+Tự giới thiệu bản thân tí xí. tôi sinh ra trong một gia đình... bình thường. Học tập và lớn lên một cách cũng bình thường.  
+Tôi là một kỹ sư... Ồh nghe có vẻ hơi ghê\~, thật ra là Developer. Ngoài ra còn là thợ sửa tất cả các thiết bị điện tử gia dụng,...
 
-Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.
+### About this blog
 
-Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.
+Tôi viết blog này để chia sẽ kiến thức của mình về IT nói chung và DevOps - SRE nói riêng. Thật ra kiến thức không bao nhiêu nhưng chia sẽ được bao nhiêu hay bấy nhiêu. Góp ích cho xã hội cộng đồng, phát triển đất nước vững mạnh.
 
-Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.
+\- **Open source:** Mình cũng sẽ chia sẽ open 1 số source code tool tẹt, biết đâu lại có vài bạn cần tới
+
+> Blog này có vài mục chính sau đây, các bạn có thể tham khảo  
+> \- ****IT chung chung__**
+>
+> \- ****DevOps Zone__**
+>
+> \- ****Tâm sự chuyện đời__**
+>
+> \- ****Mấy thứ linh tinh__**
