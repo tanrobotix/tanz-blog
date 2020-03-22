@@ -1,11 +1,12 @@
 ---
-title: Just a Generic Page
-subtitle: Just a generic subtitle for the page
+title: Recommend
+subtitle: Recommendation for something
 menus:
   main:
     title: Generic
     weight: 2
 template: page
+
 ---
 <section class="content">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci diam, elementum consectetur elit non, tempus varius leo. In ut bibendum mauris. Vestibulum mattis pharetra enim. Maecenas ornare vulputate nisi sed condimentum. Fusce sit amet cursus nunc. Vivamus malesuada posuere mollis. Aliquam facilisis neque eget ligula aliquam consequat.</p>
