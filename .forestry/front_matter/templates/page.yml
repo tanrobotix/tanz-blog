@@ -20,4 +20,4 @@ fields:
   config:
     required: true
 pages:
-- src/pages/ipsum.md
+- src/pages/About.md
