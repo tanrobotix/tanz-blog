@@ -20,5 +20,4 @@ fields:
   config:
     required: true
 pages:
-- src/pages/generic.md
 - src/pages/ipsum.md
