@@ -14,3 +14,4 @@ fields:
   label: Navigation Menu
   description: Display the navigation bar in the header
   default: true
+  hidden: true
