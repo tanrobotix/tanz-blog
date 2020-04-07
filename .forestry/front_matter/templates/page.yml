@@ -19,5 +19,3 @@ fields:
   default: page
   config:
     required: true
-pages:
-- src/pages/About.md
