@@ -8,21 +8,38 @@ menus:
 template: page
 
 ---
-Xin chào, tôi là Duy Tân.  
-Tự giới thiệu bản thân tí xí. tôi sinh ra trong một gia đình... bình thường. Học tập và lớn lên một cách cũng bình thường.  
-Tôi là một kỹ sư... Ồh nghe có vẻ hơi ghê\~, thật ra là Developer. Ngoài ra còn là thợ sửa tất cả các thiết bị điện tử gia dụng,...
+Xin chào, tôi là Tân.  
+Tôi là một kỹ sư...
+
+### Về blog này
+
+Tôi viết blog này để chia sẽ kiến thức của mình về IT nói chung và Develop Operation - Site Reliability Engineering  nói riêng. Góp ích cho xã hội cộng đồng, phát triển đất nước vững mạnh.
+
+\- **Open source:** Mình cũng sẽ chia sẽ open 1 số source code tools, biết đâu lại có vài bạn cần tới
+
+> Catalogue:
+>
+> * **DevOps/SRE Zone**
+> * **Distribution System**
+> * **Tâm sự chuyện đời**
+
+***
+
+Hi there, I'm Tan  
+I'm an engineer
 
 ### About this blog
 
-Tôi viết blog này để chia sẽ kiến thức của mình về IT nói chung và DevOps - SRE nói riêng. Thật ra kiến thức không bao nhiêu nhưng chia sẽ được bao nhiêu hay bấy nhiêu. Góp ích cho xã hội cộng đồng, phát triển đất nước vững mạnh.
+I write this blog to share my little knowledges about IT for general then for Develop Operation - Site Reliability Engineering for specifically. Contribute to IT community.
 
-\- **Open source:** Mình cũng sẽ chia sẽ open 1 số source code tool tẹt, biết đâu lại có vài bạn cần tới
+\- **Open source:** I also share some source code tools belong to blog for those who in situation.
 
-> Blog này có vài mục chính sau đây, các bạn có thể tham khảo  
-> \- ****IT chung chung__**
+> Catalogue:
 >
-> \- ****DevOps Zone__**
+> * **DevOps/SRE Zone**
 >
-> \- ****Tâm sự chuyện đời__**
 >
-> \- ****Mấy thứ linh tinh__**
+> * **Distribution System**
+>
+>
+> * **Confide in privacy**
