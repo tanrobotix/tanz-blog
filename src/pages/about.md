@@ -3,7 +3,7 @@ title: Welcome
 subtitle: Here is the very beginning of my journey
 menus:
   main:
-    title: Ipsum
+    title: About
     weight: 4
 template: page
 
