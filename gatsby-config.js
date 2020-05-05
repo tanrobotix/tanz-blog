@@ -31,6 +31,12 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-draft`,
+            options: {
+                
+            }
+        },
+        {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
                 sourceUrlPath: `fields.url`,

@@ -1,5 +1,5 @@
 ---
-title: Home
+title: home
 sections:
 - type: postlist
   template: postlist
@@ -8,7 +8,7 @@ sections:
   component: Postlist
 menus:
   main:
-    title: Home
+    title: home
     weight: 1
 template: home
 

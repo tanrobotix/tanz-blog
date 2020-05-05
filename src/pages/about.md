@@ -3,11 +3,30 @@ title: Welcome
 subtitle: Here is the very beginning of my journey
 menus:
   main:
-    title: About
+    title: about
     weight: 4
 template: page
 
 ---
+***
+Hi there, I'm Tan  
+I'm an engineer
+
+### About this blog
+
+I write this blog to share my little knowledges about IT for general then for Develop Operation - Site Reliability Engineering for specifically. Contribute to IT community.
+
+\- **Open source:** I also share some source code tools belong to blog for those who in situation.
+
+> Catalogue:
+> 
+> * **DevOps/SRE Zone**
+> * **Distribution System**
+> * **Confide in privacy**
+> * **Guide to the IT path for fresher/student**
+
+***
+
 Xin chào, tôi là Tân.  
 Tôi là một kỹ sư...
 
@@ -22,24 +41,4 @@ Tôi viết blog này để chia sẽ kiến thức của mình về IT nói chu
 > * **DevOps/SRE Zone**
 > * **Distribution System**
 > * **Tâm sự chuyện đời**
-
-***
-
-Hi there, I'm Tan  
-I'm an engineer
-
-### About this blog
-
-I write this blog to share my little knowledges about IT for general then for Develop Operation - Site Reliability Engineering for specifically. Contribute to IT community.
-
-\- **Open source:** I also share some source code tools belong to blog for those who in situation.
-
-> Catalogue:
->
-> * **DevOps/SRE Zone**
->
->
-> * **Distribution System**
->
->
-> * **Confide in privacy**
+> * **Hướng dẫn nghề nghiệp IT cho sinh viên/fresher**
