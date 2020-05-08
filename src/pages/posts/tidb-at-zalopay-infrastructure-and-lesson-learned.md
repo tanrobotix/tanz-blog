@@ -1,7 +1,7 @@
 ---
-title: 'TiDB: lesson learned at ZaloPay'
-excerpt: At ZaloPay, we use TiDB for almost significant service to store...
-date: 2020-04-07T15:00:00+07:00
+title: 'TiDB at ZaloPay infrastructure & lesson learned'
+excerpt: At ZaloPay, we use TiDB as a core database for store almost of the payment transaction...
+date: 2020-05-02T15:00:00+07:00
 thumb_img_path: "/images/tidb.jpg"
 template: post
 subtitle: ''
@@ -14,9 +14,9 @@ author: 'tantnd'
 
 ### Introduce ZaloPay
 
-ZaloPay is a mobile payment application with use cases for daily life and business needs launched in 2017, relatively compare with the appearance of MoMo, GrabPay by Moca, ViettelPay,...
+ZaloPay is a mobile payment application serving user's daily life and business needs firstly launched in 2017. It is relatively competitive compared to MoMo, GrabPay by Moca, ViettelPay, e.t.c
 
-Similar to AliPay as one of three tenets of the “iron triangle” (the others being e-commerce and logistics). GrabPay as an enabler on the Grab ecosystem and WeChat Pay on a social media platform.
+Similar to AliPay which is one of three tenets of the “iron triangle” (aka e-commerce and logistics). GrabPay is as an enabler on the Grab ecosystem and WeChat Pay is on a social media platform.
 
 In turn, Zalo is a key product of the Vietnamese conglomerate VNG Coporation. ZaloPay is built on the top of [Zalo](https://zalo.me), the most popular messenger app in Vietnam which was launched in 2012, with > 100M active users nowaday at the time write this blog.
 
@@ -130,13 +130,13 @@ It is undeniable that TiDB architecture have 4 main components
 
 ### What TiDB can do on ZaloPay Platform infrastructure?
 
-The E-Wallet gamming of all about the technologies giant is about to intensively more than ever before. We have to be careful in all of our decision to make our infrastructure become a example to following for other team, we have to give out many difficult decisions to make a lot of changes in the backend and infrastructure.
+The E-Wallet gambling of all about the giant in technologies is more intensive than ever before. As the business are boomming, we have to be careful in all of our decision to make our infrastructure become a example to following for other team, to make enough steady to serve the bomming business, we have to give out many difficult decisions to make a lot of changes in the backend and infrastructure.
 
-As our businesses are growing so fast day by day, we can easily spot that our infrastructure is the remarkable thing in the way of development. Luckily for us, almost the technical things in our architecture were carefully chosen from the very beginning. Take database systems for instance, we do not to migrate anyhtings from MySQL or whatever to the new database system.
+As our businesses are growing so fast day by day, we can easily spot that our infrastructure is the remarkable thing in the way of development. Luckily for us, almost the technical things in our roadmap were carefully chosen from the very beginning. Take database systems for instance, we do not to migrate anythings from whatever to the new database system.
 
-While we're finding the solution for the explanation of database. We busted TiDB. Can easily turn out that how good in the the way of commitment, the way of interaction with each other of PingCAP team member, also TiDB is implemented by **Go** and **Rust** (matching with our product implementation languagues). We bet to choose TiDB for our database solution as a ventures.
+While we're finding the solution for the explanation of database. We busted TiDB. Can easily turn out that how good in the the way of commitment, the way of interaction with each other of PingCAP team member, also TiDB is implemented by **Go** and **Rust** (matching with our product implementation). We bet to choose TiDB for our database solution as a ventures.
 
-At ZaloPay, we use TiDB as an core database for store almost of the payment transaction data, billing, config data, customer data,... of many services dots (such as billing, travelling, f&b interagtion,...). Currently, we have more than 20 nodes in our production system, storing many significant data.
+At ZaloPay, we use TiDB as a core database for store almost of the payment transaction data, billing, config data, customer data,... of many services dots (such as billing, travelling, f&b interagtion,...). At the present time, we have more than 20 nodes in our production system, storing many significant data. We're running TiDB and our other product on-premise (bare machine). In the future, we're planning to add more and more automation solutions for our product as it can catch up with the new technique trend as well as our business.
 
 Here is one of our cluster statistics
 
@@ -155,17 +155,15 @@ TiKV then goes into downright panic, TiDB server cann't reach to TiKV. We've try
 
 ### Recommendation for other TiDB users
 
-TiDB acts like it is a MySQL 5.7 server, support MySQL protocol, a majority of MySQL syntax. You can use all of the existing MySQL client libraries, and in many cases, you won't need to change a single line of code in your application
+TiDB acts as a MySQL 5.7 server, supports MySQL protocol and a majority of MySQL syntax. You can use all of the existing MySQL client's libraries. In many cases, you won't need to change a single line of code in your application.
 
-**But**, you're already know, "*act like*" isn't the same meaning as "*totally like*". Because TiDB is built from scratch, not a MySQL fork, for new user to TiDB, usually not read carefully the whole documentation, think TiDB syntax is completely like MySQL syntax. Sometimes, may meet some unexpected limitations with it when do some complexity queries , when use some interface tools for MySQL native like MySQL Workbench... or when try to backup and restore TiDB with mysqldump (which isn't recommended)... Should take a look around toolkits (Mydumper, Syncer, Loader, TiDB Lighting,...) that PingCAP optimized for TiDB.
+**But**, you're already know, "*act like*" isn't the same meaning as "*totally like*". Because TiDB is built from scratch, not a MySQL fork, for new user to TiDB, usually not carefully read the whole documentation, think TiDB syntax is completely like MySQL syntax. Sometimes, may meet up with some unexpected limitations with it when do complexity queries, or otherwise when use interface tools for MySQL native like MySQL Workbench... or when try to backup and restore TiDB with mysqldump (which isn't recommended)... Should take a look around [toolkits](https://pingcap.com/docs/stable/reference/tools/user-guide/) (Mydumper, Syncer, Loader, TiDB Lighting,...) that PingCAP optimized for TiDB.
 
-**TL;DR**: TiDB server acts like MySQL 5.7 server, but not entirely equivalent with MySQL. Just make sure you know what are you doing when use tool or run SQL queries (which was downright run well with MySQL). [Check out the list of known compatibility differences](https://pingcap.com/docs/v3.0/reference/mysql-compatibility/).
+**TL;DR**: TiDB server acts like MySQL 5.7 server, but not entirely equivalent with MySQL. Just make sure you know what are you doing when use tool or run SQL queries (which was downright run well with MySQL). [Check out the list of known compatibility differences](https://pingcap.com/docs/v3.0/reference/mysql-compatibility/). Use the [toolkits](https://pingcap.com/docs/stable/reference/tools/user-guide/) (in case needed) to interact with TiDB which is optimized by PingCAP.
 
 ***
 
 ### Postscript
-
-At the present time, we're running TiDB and our other product on-premise (bare machine). In the future, we're planning to add more and more automation solutions for our product as it can catch up with the new technique trend as well as our business.
 
 We would like to thank again PingCAP Community, who has wholeheartedly give a hand endeavor to tie up the knots we meet.
 
