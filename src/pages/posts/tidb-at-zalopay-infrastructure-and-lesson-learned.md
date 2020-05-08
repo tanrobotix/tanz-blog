@@ -12,23 +12,23 @@ author: 'tantnd'
 
 ***
 
-### Introduce ZaloPay
+### Introducing ZaloPay
 
-ZaloPay is a mobile payment application serving user's daily life and business needs firstly launched in 2017. It is relatively competitive compared to MoMo, GrabPay by Moca, ViettelPay, e.t.c
+ZaloPay is a mobile payment application serving user's daily life and business needs, firstly launched in 2017. It is relatively competitive compared to MoMo, GrabPay by Moca, ViettelPay, etc.
 
 Similar to AliPay which is one of three tenets of the “iron triangle” (aka e-commerce and logistics). GrabPay is as an enabler on the Grab ecosystem and WeChat Pay is on a social media platform.
 
-In turn, Zalo is a key product of the Vietnamese conglomerate VNG Coporation. ZaloPay is built on the top of [Zalo](https://zalo.me), the most popular messenger app in Vietnam which was launched in 2012, with > 100M active users nowaday at the time write this blog.
+In turn, Zalo is a key product of the Vietnamese conglomerate VNG Coporation. ZaloPay is built on the top of [Zalo](https://zalo.me), the most popular messenger app in Vietnam which was launched in 2012, with > 100M active users so far.
 
 ![ZaloPay](/images/zalopay.png)
 
-ZaloPay ranked the 3rd payment application of the year at the 2018 Tech Awards ceremony held by [VnExpress)](https://vnexpress.vn) newspaper (The most common newspaper in Vietnam). While competitors MoMo took the top spot, followed by ViettelPay, in the recently time, the rising  reign of GrabPay by Moca, VinID powered by VinGroup, AirPay by SEA,... making the the game more intense.
+ZaloPay ranked as the 3rd payment application of the year at the 2018 Tech Awards ceremony held by [VnExpress)](https://vnexpress.vn) newspaper (The most common newspaper in Vietnam). While competitors MoMo took the top spot, followed by ViettelPay, in the recently time, the rising  reign of GrabPay by Moca, VinID powered by VinGroup, AirPay by SEA,... making the the game more intense.
 
 ***
 
 ### What is TiDB?
 
-TiDB is developed and supported primarily by PingCAP, Inc. and licensed under Apache 2.0.
+[TiDB](https://pingcap.com/docs/stable/overview/) is developed and supported primarily by [PingCAP](https://pingcap.com/) Ltd. and licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 TiDB ("Ti" stands for Titanium) is an open-source NewSQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL compatible and features horizontal scalability, strong consistency, and high availability.
 
@@ -36,13 +36,13 @@ TiDB ("Ti" stands for Titanium) is an open-source NewSQL database that supports 
 
 > TiDB expands both SQL processing and storage by simply adding new nodes. This makes infrastructure capacity planning both easier and more cost-effective than traditional relational databases which only scale vertically.
 
-#### MySQL Compatible Syntax**
+#### MySQL Compatible Syntax
 
 > TiDB acts like it is a MySQL 5.7 server to your applications. You can continue to use all of the existing MySQL client libraries, and in many cases, you will not need to change a single line of code in your application. Because TiDB is built from scratch, not a MySQL fork, please check out the list of known compatibility differences.
 
 #### Distributed Transactions with Strong Consistency
 
-> TiDB internally shards table into small range-based chunks that we refer to as "regions". Each region defaults to approximately 100MiB in size, and TiDB uses a Two-phase commit internally to ensure that regions are maintained in a transactionally consistent way.
+> TiDB internally shards tables into small range-based chunks that we refer to as "regions". Each region defaults to approximately 100MiB in size, and TiDB uses a Two-phase commit internally to ensure that regions are maintained in a transactionally consistent way.
 
 #### Cloud Native
 
@@ -59,9 +59,9 @@ TiDB ("Ti" stands for Titanium) is an open-source NewSQL database that supports 
 
 ***
 
-### Why we choose TiDB over other db-engine?
+### Why we choose TiDB over other databases?
 
-Here is a comparison of the strongest candidate - MySQL - with TiDB (reference [**db-engines**](https://db-engines.com/))
+Here is a comparison of the strongest candidate - MySQL - with TiDB (reference [**DB-Engines**](https://db-engines.com/))
 
 ***
 
@@ -82,24 +82,24 @@ Here is a comparison of the strongest candidate - MySQL - with TiDB (reference [
 **Name** | **MySQL** | **TiDB**
 ---|---|--
 Description | Widely used open source RDBMS | TiDB is an open source distributed Hybrid Transactional/Analytical Processing (HTAP)database that supports MySQL and Spark SQLsyntaxes.
-Primary database model | Realtional DBMS | Realtional DBMS
+Primary database model | Relational DBMS | Relational DBMS
 Secondary database models | Document store | Document store
 Implementation language | C and C++ | Go, Rust
 License | OpenSource | OpenSource
 Server operating systems | FreeBSD, Linux, OS X, Solaris, Windows | Linux
 Initial Release | 1995 | 2016
-Developer | Oracle | PingCAP, Inc.
+Developer | Oracle | PingCAP Ltd.
 Data scheme | Yes | Yes
 Typing | Yes | Yes
 XML Support | Yes | No
 Secondary indexes | Yes | Yes
 SQL | Yes | Yes
-APIs and other access methods | ADO.NET, JDBC, ODBC, Propritary native API | JDBC, ODBC, Proprietary protocol
+APIs and other access methods | ADO.NET, JDBC, ODBC, Proprietary native API | JDBC, ODBC, Proprietary protocol
 Supported programming languages | Ada, C, C#, C++, D, Delphi, Eiffel, Erlang, Haskell, Java, JavaScript (Node.js), Objective-C, Ocaml,Perl, PHP, Python, Ruby, Scheme, TCL | Ada, C, C#, C++, D, Delphi, Eiffel, Erlang, Haskell, Java, JavaScript (Node.js), Objective-C, Ocaml, Perl, PHP, Python, Ruby, Scheme, TCL
-Server-side scripts (Store procedure) | Yes | No
+Server-side scripts (Stored procedure) | Yes | No
 Trigger | Yes | No
-Partitioning methods | horizontal partitioning, sharding with MySQL Cluster or MySQL Fabric | horizontal partitioning (by key range)
-Replication methods  | Master-master replication, Master-slave replication | Using Raft consensus algorithm to ensure data replication with strong consistency among multiple replicas.
+Partitioning methods | Horizontal partitioning, sharding with MySQL Cluster or MySQL Fabric | Horizontal partitioning (by key range)
+Replication methods  | Master-master replication, Master-slave replication | Uses Raft consensus algorithm to ensure data replication with strong consistency among multiple replicas.
 MapReduce | No | Yes
 Consistency concepts | Immediate Consistency | Immediate Consistency
 Foreign keys | Yes | No
@@ -111,60 +111,52 @@ User concepts | Users with fine-grained authorization concept | Users with fine-
 
 ***
 
-Every products, services,... has their own specific requirement to develop. Since those figures above, we had discussed and then proposed to sort out TiDB.
-
+Every product and service has its own specific requirement to develop. After comparing the figures above, we  decided to choose TiDB
 ***
 
 ### How does TiDB work?
 
-It is undeniable that TiDB architecture have 4 main components
+TiDB architecture has four main components:
 
 ![TiDB Architecture](/images/tidb-architecture.png)
 
-- **TiDB Server**: Sit on top of the construction, TiDB server have responsibility like the communication interface between user with the database engine server. *Receiving the SQL requests, Processing the SQL related logics, Locating the TiKV address for storing and computing data through Placement Driver (PD), Exchanging data with TiKV*
-- **TiKV Server**: Like a heart, TiKV is a distributed transactional *Key-Value* engine that play a significant role in this - storing data. TiKV uses the Raft protocol for replication to ensure the data consistency and disaster recovery. Region is the basic unit to store data of TiKV
-- **PD Server**: PD abbreviation for Placement Driver. By embedding etcd, using the Raft consensus algorithm, this is allows PD to support distribution and fault-tolerance, redundancy. PD play the role that storing metdata, scheduling & load-balancing, allocating the transaction ID.
-- **TiSpark**: Is build for running Apache Spark on top of TiDB/TiKV. This layer provide a method to answer complex OLAP queries. With TiSpark, TiDB can intergrates with big data ecosystem, support OLTP, OLAP scenario.
+- **TiDB Server**: Sitting on top of the construction, TiDB server is responsible for the communication interface between users and the database engine server, including receiving the SQL requests, processing the SQL related logics, locating the TiKV address for storing and computing data through Placement Driver (PD), and exchanging data with TiKV.
+- **TiKV Server**: TiKV is a distributed transactional Key-Value engine that plays a significant role in this - storing data. TiKV uses the Raft protocol for replication to ensure data consistency and disaster recovery. Region is the basic unit of storing data in TiKV.
+- **PD Server**: PD is the abbreviation for Placement Driver. By embedding etcd, PD uses the Raft consensus algorithm, which allows PD to support distribution, fault-tolerance, and redundancy. PD is used for storing metadata, scheduling, load-balancing, and allocating the transaction ID.
+- **TiSpark**: Is built for running Apache Spark on top of TiDB/TiKV. This layer provides a method to answer complex OLAP queries. With TiSpark, TiDB can intergrate with  big data ecosystem support OLTP and OLAP scenarios.
 
 ***
 
-### What TiDB can do on ZaloPay Platform infrastructure?
+### What can TiDB do on ZaloPay Platform infrastructure?
 
-The E-Wallet gambling of all about the giant in technologies is more intensive than ever before. As the business are boomming, we have to be careful in all of our decision to make our infrastructure become a example to following for other team, to make enough steady to serve the bomming business, we have to give out many difficult decisions to make a lot of changes in the backend and infrastructure.
-
-As our businesses are growing so fast day by day, we can easily spot that our infrastructure is the remarkable thing in the way of development. Luckily for us, almost the technical things in our roadmap were carefully chosen from the very beginning. Take database systems for instance, we do not to migrate anythings from whatever to the new database system.
-
-While we're finding the solution for the explanation of database. We busted TiDB. Can easily turn out that how good in the the way of commitment, the way of interaction with each other of PingCAP team member, also TiDB is implemented by **Go** and **Rust** (matching with our product implementation). We bet to choose TiDB for our database solution as a ventures.
-
-At ZaloPay, we use TiDB as a core database for store almost of the payment transaction data, billing, config data, customer data,... of many services dots (such as billing, travelling, f&b interagtion,...). At the present time, we have more than 20 nodes in our production system, storing many significant data. We're running TiDB and our other product on-premise (bare machine). In the future, we're planning to add more and more automation solutions for our product as it can catch up with the new technique trend as well as our business.
-
-Here is one of our cluster statistics
+The E-Wallet gambling of the giants in technologies is more intensive than ever before. As the business is booming, we have to be careful in all of our decisions to make our infrastructure an example to be followed by other teams. To be steady enough to serve the booming business, millions of users , we have to make many difficult decisions and make a lot of changes in the backend and infrastructure.
+As our businesses are growing so fast day by day, we can easily spot that our infrastructure is the biggest obstacle in our development. Luckily for us, almost the technical things in our roadmap were carefully chosen from the very beginning. Taking database systems for instance, we do not migrate anything to the new database system.
+In our search for the database solutions for ZaloPay, we found TiDB. TiDB is implemented in Go and Rust, matching our product implementation. Further, the PingCAP team is committed to the open source community, friendly to work with and is very responsive. For these reasons, we bet our database on TiDB.
+At ZaloPay, we use TiDB as a core database to store most of the payment transaction data, billing, config data, and customer data of many services dots (such as billing, travelling, and f&b integration). At the present time, we have more than 20 nodes in our production system, storing a lot of significant data. We're running TiDB and our other product on-premise (bare machine). In the future, we're planning to add more and more automation solutions for our product as it can catch up with the new technology trend as well as our business.
+Here is one of our cluster statistics:
 
 ![TiDB Cluster Statistics](/images/sysinfo.png)
 
 ***
 
-### Unique mistaken story while using TiDB
+### Lesson learned while using TiDB
 
-Since we're not having enough experiences in conserve and keep up with TiDB, a miscalculation had been occurred.
-At our develop/sandbox/staging environment, some applications were granted permission to write data directly into TiKV cluster. As can illustrated, the application and TiDB are both writing data into TiKV cluster, mixed using like that **is not endorsed**. Other application could easily break TiDB data (called regions). Many regions has been shattered, then can not retrieve.
-
-TiKV then goes into downright panic, TiDB server cann't reach to TiKV. We've try to recover it in many way but just can't. Then we're finding the way to reach to PingCAP Support Community. Thankfully, we've get very welcommed from PingCAP Community. I was introduced with TiDB VPE (Vice President of Engineering), many Senior Engineer of TiKV/TiDB Team... who will give a kindness help us in situation. PingCAP actually take every user’s data seriously! TiDB uses the transactional KV API. Use these two APIs together in the same cluster, otherwise they might corrupt each other’s data. Since this case, the VP Engineer said that they will provide mechanism to prevent user from mix-using the two APIs in single cluster in the future.
+Because we don't have much experience with TiDB, we made a significant miscalculation. At our development/sandbox/staging environment, some applications were granted permission to write data directly into the TiKV cluster. As shown in the figure, the application and TiDB are both writing data into the TiKV cluster, which is not endorsed. Other applications could easily break TiDB data (called Regions). Many Regions were shattered, and could not be retrieved.
+TiKV then went into a downright panic, and the TiDB server couldn’t reach TiKV. We tried to recover it in many ways but couldn’t. Then we're finding the way to reach the PingCAP support staff. Thankfully, PingCAP engineers came to our aid. I was introduced to the TiDB VPE (Vice President of Engineering) and many Senior Engineers on TiKV/TiDB Team, all of whom gave us invaluable help.. PingCAP actually takes every user’s data seriously! TiDB uses the transactional KV API. Do not use these two APIs together in the same cluster; otherwise, they might corrupt each other’s data. The VP of Engineering said that they will provide a mechanism to prevent users from mix-using the two APIs in a single cluster in the future.
 
 ***
 
 ### Recommendation for other TiDB users
 
-TiDB acts as a MySQL 5.7 server, supports MySQL protocol and a majority of MySQL syntax. You can use all of the existing MySQL client's libraries. In many cases, you won't need to change a single line of code in your application.
+TiDB acts as a MySQL 5.7 server and supports MySQL protocol and a majority of MySQL syntax. You can use all of the existing MySQL client's libraries. In many cases, you won't need to change a single line of code in your application.
 
-**But**, you're already know, "*act like*" isn't the same meaning as "*totally like*". Because TiDB is built from scratch, not a MySQL fork, for new user to TiDB, usually not carefully read the whole documentation, think TiDB syntax is completely like MySQL syntax. Sometimes, may meet up with some unexpected limitations with it when do complexity queries, or otherwise when use interface tools for MySQL native like MySQL Workbench... or when try to backup and restore TiDB with mysqldump (which isn't recommended)... Should take a look around [toolkits](https://pingcap.com/docs/stable/reference/tools/user-guide/) (Mydumper, Syncer, Loader, TiDB Lighting,...) that PingCAP optimized for TiDB.
+**But**, as you may already know, "act like" isn't the same meaning as "totally like" Because TiDB is built from scratch, not a MySQL fork, a new TiDB user might not carefully read the whole documentation, thinking that TiDB syntax is completely like MySQL syntax. Sometimes, you may meet up with some unexpected limitations with it when you do complex queries, or when you use interface tools for MySQL native like MySQL Workbench... or when you try to backup and restore TiDB with mysqldump (which isn't recommended). ... If you encounter any issues, take a look at  [toolkits](https://pingcap.com/docs/stable/reference/tools/user-guide/) (Mydumper, Syncer, Loader, TiDB Lighting,...) that PingCAP has optimized for TiDB.
 
-**TL;DR**: TiDB server acts like MySQL 5.7 server, but not entirely equivalent with MySQL. Just make sure you know what are you doing when use tool or run SQL queries (which was downright run well with MySQL). [Check out the list of known compatibility differences](https://pingcap.com/docs/v3.0/reference/mysql-compatibility/). Use the [toolkits](https://pingcap.com/docs/stable/reference/tools/user-guide/) (in case needed) to interact with TiDB which is optimized by PingCAP.
+**TL;DR**: TiDB server acts like MySQL 5.7 server, but is not entirely equivalent with MySQL. Just make sure you know what you are doing when you use tools or run SQL queries (which run well with MySQL). Also check out the list of [know compatibility differences](https://pingcap.com/docs/v3.0/reference/mysql-compatibility/). If necessary, use PingCAP's optimized [toolkits](https://pingcap.com/docs/stable/reference/tools/user-guide/) to interact with TiDB.
 
 ***
 
 ### Postscript
 
-We would like to thank again PingCAP Community, who has wholeheartedly give a hand endeavor to tie up the knots we meet.
-
-*This docs is refer to many original documentations from PingCAP, Wikipedia, db-engine,...*
+We would like to thank again PingCAP members, who has wholeheartedly helped us learned about and work with TiDB.
+*This article refers to many original documentations from PingCAP, Wikipedia, db-engine, and others...*
